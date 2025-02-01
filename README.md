@@ -1,6 +1,34 @@
+---
 # 🧠 Personality IQ - Full Stack App (Django + React)
 
-A full-stack application built using **Django (REST API)** for the backend and **React** for the frontend. This project was created as a learning experience in implementing databases, Django, and React. While the personality test is fully functional, the IQ test section is still under development.
+<p align="center">
+  <a href="https://github.com/rajesh-adk-137/personality_iq_project" target="blank">
+    <img src="https://img.shields.io/github/watchers/rajesh-adk-137/personality_iq_project?style=for-the-badge&logo=appveyor" alt="Watchers"/>
+  </a>
+  <a href="https://github.com/rajesh-adk-137/personality_iq_project/fork" target="blank">
+    <img src="https://img.shields.io/github/forks/rajesh-adk-137/personality_iq_project?style=for-the-badge&logo=appveyor" alt="Forks"/>
+  </a>
+  <a href="https://github.com/rajesh-adk-137/personality_iq_project/stargazers" target="blank">
+    <img src="https://img.shields.io/github/stars/rajesh-adk-137/personality_iq_project?style=for-the-badge&logo=appveyor" alt="Stars"/>
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/rajesh-adk-137/personality_iq_project/issues" target="blank">
+    <img src="https://img.shields.io/github/issues/rajesh-adk-137/personality_iq_project?style=for-the-badge&logo=appveyor" alt="Issues"/>
+  </a>
+  <a href="https://github.com/rajesh-adk-137/personality_iq_project/pulls" target="blank">
+    <img src="https://img.shields.io/github/issues-pr/rajesh-adk-137/personality_iq_project?style=for-the-badge&logo=appveyor" alt="Open Pull Requests"/>
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/rajesh-adk-137/personality_iq_project/blob/master/LICENSE" target="blank">
+    <img src="https://img.shields.io/github/license/rajesh-adk-137/personality_iq_project?style=for-the-badge&logo=appveyor" alt="License"/>
+  </a>
+</p>
+
+A full-stack web application using Django (REST API) for the backend and React for the frontend. This project enables users to take Personality and IQ tests to gain insights into their traits and cognitive abilities. The Personality Test is fully functional, providing users with analytical results based on psychological models. The IQ Test is currently under development and will include logic-based questions to assess intelligence.
+
+This project serves as a learning experience in implementing databases, authentication, REST APIs, and frontend development while creating an engaging and interactive user experience.
 
 ---
 
@@ -26,23 +54,46 @@ A full-stack application built using **Django (REST API)** for the backend and *
 
 ### 1️⃣ Clone the Repository
 ```sh
-git clone <your-repo-url>
+git clone https://github.com/rajesh-adk-137/personality_iq_project.git
+```
+
+```sh
 cd personality_iq_project
 ```
 
 ---
 
 ### 2️⃣ Backend Setup (Django)
+
+#### Navigate to the backend directory
 ```sh
-cd backend  # Navigate to backend directory
-python -m venv env  # Create a virtual environment
-env\Scripts\activate  # Activate the virtual environment (Windows)
-pip install -r requirements.txt  # Install dependencies
+cd backend
 ```
 
-#### **MySQL Database Setup**
-1. Install **XAMPP** and run **Apache & MySQL** servers.
-2. Open **phpMyAdmin** and create a new database (e.g., `personality_iq_db`).
+#### Create a virtual environment
+```sh
+python -m venv env
+```
+
+#### Activate the virtual environment
+**Windows:**
+```sh
+env\Scripts\activate
+```
+**Mac/Linux:**
+```sh
+source env/bin/activate
+```
+
+#### Install dependencies
+```sh
+pip install -r requirements.txt
+```
+
+#### MySQL Database Setup
+1. Install **XAMPP** and start **Apache & MySQL** servers.  
+2. Open **phpMyAdmin** and create a new database:  
+   **Database Name:** `personality_iq_db`  
 3. Update `backend/django_backend/settings.py` with your MySQL database credentials:
 
 ```python
@@ -58,22 +109,36 @@ DATABASES = {
 }
 ```
 
-4. Apply migrations and start the backend:
+#### Apply migrations
 ```sh
-python manage.py migrate  # Apply migrations
-python manage.py runserver  # Start the Django server
+python manage.py migrate
 ```
-➡️ Backend will run at: **`http://127.0.0.1:8000/`**
+
+#### Start the backend server
+```sh
+python manage.py runserver
+```
+➡️ The backend will run at: **`http://127.0.0.1:8000/`**
 
 ---
 
 ### 3️⃣ Frontend Setup (React)
+
+#### Navigate to the frontend directory
 ```sh
-cd frontend  # Navigate to frontend directory
-npm install --legacy-peer-deps  # Install dependencies
-npm start  # Start the React app
+cd ../frontend
 ```
-➡️ Frontend will run at: **`http://localhost:3000/`**
+
+#### Install dependencies
+```sh
+npm install --legacy-peer-deps
+```
+
+#### Start the React app
+```sh
+npm start
+```
+➡️ The frontend will run at: **`http://localhost:3000/`**
 
 ---
 
@@ -82,23 +147,35 @@ npm start  # Start the React app
 |--------|----------|-------------|
 | `POST` | `/api/register/` | Register a new user |
 | `POST` | `/api/login/` | Authenticate user & return JWT token |
-| `GET` | `/api/personality-test/` | Retrieve personality test questions |
+| `GET`  | `/api/personality-test/` | Retrieve personality test questions |
 | `POST` | `/api/personality-test/submit/` | Submit answers and get results |
 
 ---
 
-## 📸 Screenshots (To Be Added)
-*(Upload project images here)*
+## 📸 Screenshots  
+
+Here are some screenshots of the project interface:
+
+| Page | Image |
+|------|-------|
+| **Landing Page** | ![Landing Page](Landing_page.png) |
+| **Signup Page** | ![Signup Page](signup.png) |
+| **Personality Test - Question 1** | ![Question 1](question_1.png) |
+| **Personality Test - Question 20** | ![Question 20](question_20.png) |
+| **Results Page** | ![Results Page](result.png) |
+| **Details Page** | ![Details Page](details.png) |
+| **IQ Test Section** | ![IQ Test Section](iq_section.png) |
+
+
+
 
 ---
 
 ## 🤝 Contributing
-Want to improve this project? Feel free to submit a pull request!
+Want to improve this project? Feel free to submit a **pull request**!  
 
 ---
 
 ## 📜 License
-This project is licensed under the **MIT License**.
-
----
-
+This project is licensed under the **MIT License**.  
+```
