@@ -1,0 +1,26 @@
+.terms-card {
+    width: 400px;
+    text-align: left;
+    margin: auto;
+    height:80%;
+  }
+  
+
+  .back-button {
+    display: block;
+     margin-top: 10px; 
+    text-align: center;
+    width: 100px;
+     margin-left: 150px;
+    transition: all 0.2s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #076bcf;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .back-button:hover {
+    transform: scale(1.01);
+    background-color: #205b9a;
+  }

@@ -1,0 +1,51 @@
+
+.vh-100 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    height: 100vh;
+  }
+  
+  /* Style for the main card */
+  .card-style {
+    border: 2px solid #e4e4e4; /* Adjust the border */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Adjust shadow */
+    background-color: #dbe9e9;
+    padding: 20px;
+    transition: transform 0.1s, box-shadow 0.1s;
+  }
+  
+  .card-style:hover {
+    transform: scale(1.005);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style for the "Discover Your Personality" heading */
+  .card-heading {
+    
+    color: #1e72bb;/* Blue color */
+    font-weight: bold;
+    font-size: 2.5rem;
+    transition: color 0.0s;
+  }
+  
+  .card-heading:hover {
+    color: #61bb6a; 
+     /* Darker blue on hover */
+  }
+  
+  /* Style for the button */
+  .card-button {
+    margin-top: 20px;
+    border: none;
+    color: #fff;
+    background-color: #00cc66; /* Green color */
+    transition: background-color 0.2s;
+  }
+  
+  .card-button:hover {
+    background-color: #008040; /* Darker green on hover */
+  }
+  

@@ -1,0 +1,133 @@
+/* PersonalityTestResult.css */
+.loading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-align: center;
+    height: 50vh; /* Vertically center the content */
+  }
+  
+  
+  .loading-spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #007bff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin-right: 10px;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+
+  .traits-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .traits-list li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .list-number {
+    display: inline-block;
+    width: 30px; /* Adjust the width as needed */
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .trait-text {
+    display: inline-block;
+    margin-left: 10px; /* Adjust the margin as needed */
+    font-weight: bold;
+    color: green;
+  }
+  
+
+
+  
+   
+  .chart-traits-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .chart-container {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 49%; /* Adjust the width as needed */
+  }
+  
+  .chart-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .traits-container {
+    flex: 0.3;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 49%; /* Adjust the width as needed */
+  }
+  
+  .traits-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+.home-button {
+    margin-top: 20px;
+    background-color: #1c8adb;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.home-button:hover {
+    background-color: #3c99dbcf;
+    transform: scale(1.05); /* Add a slight scale on hover for a subtle animation */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a box shadow on hover for depth */
+}
+
+
+
+.home-button2 {
+  margin-top: 20px;
+  background-color: #42db1c;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 25px;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.home-button2:hover {
+  background-color: #3c99dbcf;
+  transform: scale(1.05); /* Add a slight scale on hover for a subtle animation */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a box shadow on hover for depth */
+}

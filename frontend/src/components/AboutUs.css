@@ -1,0 +1,72 @@
+.card-1 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
+ 
+  }
+  
+  .card-1:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); 
+  }
+
+
+
+
+.about-description {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(43, 156, 12);
+}
+
+.social-buttons {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.social-button {
+  display: inline-block;
+  margin: 0 5px; 
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+
+
+
+.social-icon {
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.social-icon-twitter {
+  width: 24px; 
+  height: auto; 
+  transition: transform 0.3s;
+}
+
+.social-button:hover .social-icon {
+  transform: scale(1.1);
+}
+
+.social-button:active .social-icon {
+  transform: scale(0.9);
+}
+
+
+.social-button:hover .social-icon-twitter {
+  transform: scale(1.1);
+}
+
+.social-button:active .social-icon-twitter {
+  transform: scale(0.9);
+}
