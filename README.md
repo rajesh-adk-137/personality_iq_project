@@ -43,7 +43,7 @@ pip install -r requirements.txt  # Install dependencies
 #### **MySQL Database Setup**
 1. Install **XAMPP** and run **Apache & MySQL** servers.
 2. Open **phpMyAdmin** and create a new database (e.g., `personality_iq_db`).
-3. Update `backend/settings.py` with your MySQL database credentials:
+3. Update `backend/django_backend/settings.py` with your MySQL database credentials:
 
 ```python
 DATABASES = {
